@@ -4,7 +4,7 @@
  ***********************/
 
 // 1) Paste your deployed Apps Script Web App URL here:
-const WEB_APP_URL = "PASTE_YOUR_WEB_APP_URL_HERE";
+const WEB_APP_URL = "https://docs.google.com/spreadsheets/d/1K4iofsKaOE1n7d_dXLOorKUAt2_PDOGjYWnnusGoAbQ/edit?usp=sharing";
 
 const form = document.getElementById("signupForm");
 const successMessage = document.getElementById("successMessage");
