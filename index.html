@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#6d5efc" />
+  <title>CareerLaunch - Signup Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container container">
+      <div class="brand">
+        <div class="logo">CareerLaunch</div>
+        <div class="nav-tagline">National Association of Software and Service Companies</div>
+      </div>
+      <a class="nav-cta" href="#apply">Apply Now</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-card tilt" id="heroTilt">
+        <div class="hero-badge">Admissions Open</div>
+        <h1>Unlock Your Career with CareerLaunch</h1>
+        <p class="subtitle">Join our premium 2-month career-boosting program with real projects & certifications.</p>
+
+        <div class="hero-highlights">
+          <div class="highlight-item"><span class="highlight-icon">🎯</span><span>2-Month Career-Boosting Program</span></div>
+          <div class="highlight-item"><span class="highlight-icon">🏅</span><span>Official Certifications</span></div>
+          <div class="highlight-item"><span class="highlight-icon">💼</span><span>Real Projects & Job Portal Access</span></div>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn-primary" href="#apply">Apply in 30 Seconds</a>
+          <a class="btn-ghost" href="#details">See Program Details</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MNC MOVING LOGOS -->
+  <section class="mnc-strip" aria-label="Top MNC companies moving logos">
+    <div class="container">
+      <h2 class="mnc-title">Top MNC Companies</h2>
+
+      <div class="marquee">
+        <div class="marquee-track">
+          <!-- Put your images inside /frontend/assets/ -->
+          <img src="assets/hp.png" alt="HP logo">
+          <img src="assets/reliance.jpg" alt="Reliance logo">
+          <img src="assets/intel.jpg" alt="Intel logo">
+          <img src="assets/oracle.png" alt="Oracle logo">
+          <img src="assets/samsung.png" alt="Samsung logo">
+          <img src="assets/microsoft.png" alt="Microsoft logo">
+          <img src="assets/google.png" alt="Google logo">
+          <img src="assets/apple.png" alt="Apple logo">
+          <img src="assets/meta.png" alt="Meta logo">
+          <img src="assets/fedex.png" alt="FedEx logo">
+
+          <!-- Duplicate for smooth infinite scroll -->
+          <img src="assets/hp.png" alt="HP logo">
+          <img src="assets/reliance.jpg" alt="Reliance logo">
+          <img src="assets/intel.jpg" alt="Intel logo">
+          <img src="assets/oracle.png" alt="Oracle logo">
+          <img src="assets/samsung.png" alt="Samsung logo">
+          <img src="assets/microsoft.png" alt="Microsoft logo">
+          <img src="assets/google.png" alt="Google logo">
+          <img src="assets/apple.png" alt="Apple logo">
+          <img src="assets/meta.png" alt="Meta logo">
+          <img src="assets/fedex.png" alt="FedEx logo">
+        </div>
+      </div>
+
+      <p class="mnc-note">Logos shown for representation/aspiration.</p>
+    </div>
+  </section>
+
+  <!-- PROGRAM DETAILS + FORM -->
+  <main class="program-details" id="details">
+    <div class="container">
+      <h2>Your 2-Month Career-Boosting Journey</h2>
+
+      <div class="details-grid">
+        <div class="detail-card tilt"><div class="detail-icon">🎯</div><h3>Foundation Training</h3><p>Build strong fundamentals</p></div>
+        <div class="detail-card tilt"><div class="detail-icon">🔬</div><h3>DOJO Works</h3><p>1000+ Companies Placement Assistance</p></div>
+        <div class="detail-card tilt"><div class="detail-icon">💼</div><h3>Real-Industry Projects</h3><p>Industrial + Real-time projects</p></div>
+        <div class="detail-card tilt"><div class="detail-icon">💻</div><h3>Resume Support</h3><p>Resume + Job Portal Access</p></div>
+      </div>
+
+      <div class="certification-banner">
+        <span class="cert-icon">🏅</span>
+        <span>Official Certifications awarded upon completion</span>
+      </div>
+
+      <!-- Signup Form -->
+      <section id="apply" class="apply-wrap">
+        <form id="signupForm" class="signup-form tilt" novalidate>
+          <div class="form-top">
+            <div>
+              <h3 class="form-title">Apply Now</h3>
+              <p class="form-subtitle">Fill details & submit. We'll contact you shortly.</p>
+            </div>
+            <div class="form-chip">Fast Apply</div>
+          </div>
+
+          <!-- Personal Information -->
+          <div class="form-section">
+            <h3 class="section-title">Personal Information</h3>
+
+            <div class="form-group">
+              <label for="name">Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" required placeholder="Enter your full name">
+              <span class="error-message" id="nameError"></span>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email ID <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                <span class="error-message" id="emailError"></span>
+              </div>
+              <div class="form-group">
+                <label for="collegeEmail">College Mail ID</label>
+                <input type="email" id="collegeEmail" name="collegeEmail" placeholder="your.name@college.edu">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="mobile">Mobile No. <span class="required">*</span></label>
+                <input type="tel" id="mobile" name="mobile" required placeholder="10-digit mobile number" maxlength="10" inputmode="numeric">
+                <span class="error-message" id="mobileError"></span>
+              </div>
+              <div class="form-group">
+                <label for="whatsapp">WhatsApp No. <span class="required">*</span></label>
+                <input type="tel" id="whatsapp" name="whatsapp" required placeholder="10-digit WhatsApp number" maxlength="10" inputmode="numeric">
+                <span class="error-message" id="whatsappError"></span>
+
+                <label class="mini-toggle">
+                  <input type="checkbox" id="copyMobileToWhatsApp">
+                  <span>Same as Mobile</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Educational Information -->
+          <div class="form-section">
+            <h3 class="section-title">Educational Information</h3>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="college">College/University <span class="required">*</span></label>
+                <input type="text" id="college" name="college" required placeholder="Your college/university name">
+                <span class="error-message" id="collegeError"></span>
+              </div>
+              <div class="form-group">
+                <label for="department">Department <span class="required">*</span></label>
+                <input type="text" id="department" name="department" required placeholder="e.g., Computer Science, Electronics">
+                <span class="error-message" id="departmentError"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Year of Study <span class="required">*</span></label>
+              <div class="radio-group">
+                <label class="radio-label"><input type="radio" name="yearOfStudy" value="1st Year" required> 1st Year</label>
+                <label class="radio-label"><input type="radio" name="yearOfStudy" value="2nd Year" required> 2nd Year</label>
+                <label class="radio-label"><input type="radio" name="yearOfStudy" value="3rd Year" required> 3rd Year</label>
+                <label class="radio-label"><input type="radio" name="yearOfStudy" value="4th Year" required> 4th Year</label>
+                <label class="radio-label"><input type="radio" name="yearOfStudy" value="Other" required> Other</label>
+              </div>
+              <span class="error-message" id="yearError"></span>
+            </div>
+          </div>
+
+          <!-- Program Preferences -->
+          <div class="form-section">
+            <h3 class="section-title">Program Preferences</h3>
+
+            <div class="form-group">
+              <label for="domain">Interested Domain <span class="required">*</span></label>
+              <select id="domain" name="domain" required>
+                <option value="">-- Select a Domain --</option>
+                <option value="Web Development">Web Development</option>
+                <option value="App Development">App Development</option>
+                <option value="Data Analytics">Data Analytics</option>
+                <option value="Artificial Intelligence">Artificial Intelligence</option>
+                <option value="Cyber Security">Cyber Security</option>
+                <option value="AR VR">AR VR</option>
+                <option value="Embedded Systems">Embedded Systems</option>
+                <option value="Machine Learning">Machine Learning</option>
+                <option value="Robotics+IOT">Robotics+IOT (With hardware Kit)</option>
+                <option value="Hybrid and Electrical Vehicles">Hybrid and Electrical Vehicles</option>
+                <option value="Finance">Finance</option>
+                <option value="Nano Technology">Nano Technology</option>
+                <option value="Investment Banking">Investment Banking</option>
+                <option value="VLSI">VLSI</option>
+                <option value="Marketing Management">Marketing Management</option>
+                <option value="Metaverse">Metaverse</option>
+                <option value="Social Media Marketing">Social Media Marketing</option>
+                <option value="AI Automation">AI Automation</option>
+                <option value="Bitcoin/BlockChain">Bitcoin/BlockChain</option>
+                <option value="Micro Biology">Micro Biology</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Web 3">Web 3</option>
+                <option value="Molecular Biology">Molecular Biology</option>
+                <option value="DSA">DSA</option>
+                <option value="Graphic Designing">Graphic Designing</option>
+                <option value="Car Designing">Car Designing</option>
+                <option value="Auto CAD">Auto CAD</option>
+                <option value="Human Resources Management">Human Resources Management</option>
+                <option value="Genetic Engineering">Genetic Engineering</option>
+                <option value="UI/UX Design">UI/UX Design</option>
+                <option value="Cloud Computing">Cloud Computing</option>
+                <option value="Cybersecurity">Cybersecurity</option>
+                <option value="DevOps">DevOps</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+                <option value="Business Analytics">Business Analytics</option>
+                <option value="Other">Other</option>
+              </select>
+              <span class="error-message" id="domainError"></span>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="batch">Batch/Month Opted <span class="required">*</span></label>
+                <select id="batch" name="batch" required>
+                  <option value="">-- Select Batch Month --</option>
+                  <option value="February">February</option>
+                  <option value="March">March</option>
+                  <option value="April">April</option>
+                  <option value="May">May</option>
+                  <option value="Other">Other</option>
+                </select>
+                <span class="error-message" id="batchError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="language">Comfortable Language <span class="required">*</span></label>
+                <select id="language" name="language" required>
+                  <option value="">-- Select Language --</option>
+                  <option value="English">English</option>
+                  <option value="Hindi">Hindi</option>
+                  <option value="Telugu">Telugu</option>
+                  <option value="Tamil">Tamil</option>
+                  <option value="Kannada">Kannada</option>
+                  <option value="Malayalam">Malayalam</option>
+                  <option value="Marathi">Marathi</option>
+                  <option value="Bengali">Bengali</option>
+                  <option value="Gujarati">Gujarati</option>
+                  <option value="Other">Other</option>
+                </select>
+                <span class="error-message" id="languageError"></span>
+              </div>
+            </div>
+
+            <div class="form-group checkbox-group-single">
+              <label class="checkbox-label">
+                <input type="checkbox" id="terms" name="terms" required>
+                I agree to receive communications about this program <span class="required">*</span>
+              </label>
+              <span class="error-message" id="termsError"></span>
+            </div>
+          </div>
+
+          <button type="submit" class="submit-btn" id="submitBtn">Submit Application</button>
+
+          <p class="privacy-note">
+            By submitting, you agree that the team may contact you via call/WhatsApp/email for program updates.
+          </p>
+        </form>
+
+        <!-- Success Message -->
+        <div id="successMessage" class="success-message" style="display:none;">
+          <div class="success-content tilt">
+            <div class="success-icon">✓</div>
+            <h3>Application Submitted Successfully!</h3>
+            <p>Thank you for applying to our Training & Internship Program.</p>
+            <p>We'll review your application and contact you shortly.</p>
+            <p class="success-email">Check your email for further updates.</p>
+            <button class="reset-btn" onclick="location.reload()">Submit Another Application</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>About Us</h4>
+          <p>We provide industry-recognized training and internship programs.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>Email: support@launched.org.in</p>
+          <p>Phone: 8884029458</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Certifications</h4>
+          <p>🏅 Global MNC Certificate</p>
+          <p>⭐ NASSCOM Certificate</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Launched Global. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
