@@ -87,7 +87,7 @@ function validateForm() {
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  if (!WEB_APP_URL || WEB_APP_URL.includes("PASTE_YOUR_WEB_APP_URL_HERE")) {
+  if (!WEB_APP_URL || WEB_APP_URL.includes("https://docs.google.com/spreadsheets/d/1K4iofsKaOE1n7d_dXLOorKUAt2_PDOGjYWnnusGoAbQ/edit?usp=sharing")) {
     alert("Please paste your Apps Script Web App URL in script.js (WEB_APP_URL).");
     return;
   }
